@@ -21,7 +21,7 @@ public class Shop {
 			if (canOrder(menu, count)) {
 					total+=calculate(menu, count);
 			} else {
-				System.out.printf("Sorry , we are out of store you can still get (%d) left.Do you want to buy");
+				System.out.printf("Sorry , we are out of store you can still get ( %d ) left.Do you want to buy");
 				item[menu-1].getAmount();
 				if (getuserInput().equalsIgnoreCase("Y")) {
 					total += calculate(menu, item[menu - 1].getAmount());
